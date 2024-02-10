@@ -1,0 +1,105 @@
+/* *********************************************************************************** 
+Start of code from:
+RESPONSIVE 12-COLUMN GRID from SELF STUDY MATERIALS
+https://github.com/learnCodeForUXUI/CSS_Grid/blob/master/6_responsive_12_column_grid/css/design.css
+*********************************************************************************** */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+}
+
+.cell {
+    background-color: rgb(220, 220, 220);
+    height: 100px;
+}
+
+/* default - small devices */
+
+[class*="col"] {
+/*     grid-column-end: span 12; */
+}
+
+/* below 600px typically phone*/
+
+@media only screen and (max-width: 600px) {
+    .sm1 {
+        grid-column-end: span 12;
+    }
+    .sm2 {
+        grid-column-end: span 6;
+    }
+    .sm3 {
+        grid-column-end: span 4;
+    }
+    .sm4 {
+        grid-column-end: span 3;
+    }
+    .sm6 {
+        grid-column-end: span 2;
+    }
+    .sm12 {
+        grid-column-end: span 1;
+    }
+
+}
+
+/* above 601px typically tablet*/
+
+@media only screen and (min-width: 601px) {
+    .md1 {
+        grid-column-end: span 12;
+    }
+    .md2 {
+        grid-column-end: span 6;
+    }
+    .md3 {
+        grid-column-end: span 4;
+    }
+    .md4 {
+        grid-column-end: span 3;
+    }
+    .md6 {
+        grid-column-end: span 2;
+    }
+    .md12 {
+        grid-column-end: span 1;
+    }
+	.md8{
+		grid-column-end: span 8;
+	}
+}
+
+/* above 1025px typically desktop*/
+
+@media only screen and (min-width: 1025px) {
+    .col1 {
+        grid-column-end: span 12;
+    }
+    .col2 {
+        grid-column-end: span 6;
+    }
+    .col3 {
+        grid-column-end: span 4;
+    }
+    .col4 {
+        grid-column-end: span 3;
+    }
+    .col6 {
+        grid-column-end: span 2;
+    }
+    .col12 {
+        grid-column-end: span 1;
+    }
+
+	.col8{
+		grid-column-end: span 8;
+	}
+}
+
+/* *********************************************************************************** 
+End of code from:
+RESPONSIVE 12-COLUMN GRID from SELF STUDY MATERIALS
+https://github.com/learnCodeForUXUI/CSS_Grid/blob/master/6_responsive_12_column_grid/css/design.css
+*********************************************************************************** */
